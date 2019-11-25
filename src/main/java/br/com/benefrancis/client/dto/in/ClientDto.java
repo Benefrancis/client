@@ -7,8 +7,10 @@ import lombok.Data;
 public class ClientDto {
 
 	ClientDto(Client c) {
-		
+
 		this.id = c.getId();
+
+		this.name = c.getName();
 
 		this.secret = c.getSecret();
 
@@ -28,6 +30,8 @@ public class ClientDto {
 	}
 
 	private String id;
+
+	private String name;
 
 	private String secret;
 

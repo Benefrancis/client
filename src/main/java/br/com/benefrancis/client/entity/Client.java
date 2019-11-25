@@ -15,7 +15,11 @@ public class Client {
 	@Id
 	@Column(name = "client_id", nullable = false, unique = true)
 	private String id;
-
+	
+	@Column(name = "client_name", nullable = false)
+	private String name;
+	
+	
 	@Column(name = "client_secret")
 	private String secret;
 

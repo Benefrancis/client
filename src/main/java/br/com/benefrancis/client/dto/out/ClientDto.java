@@ -9,6 +9,8 @@ public class ClientDto {
 	public ClientDto(Client c) {
 
 		this.id = c.getId();
+		
+		this.name =c.getName();
 
 		this.redirect = c.getRedirect();
 
@@ -27,6 +29,8 @@ public class ClientDto {
 
 	private String id;
 
+	private String name;
+	
 	private String redirect;
 
 	private String scope;
